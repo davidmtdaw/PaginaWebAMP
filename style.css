@@ -26,7 +26,7 @@ html { scroll-behavior: smooth; }
 
 body {
   font-family: 'DM Sans', sans-serif;
-  background-color: var(--black);
+  background-color: #cce7ff;
   color: var(--white);
   font-size: var(--text-md);
   line-height: 1.6;
