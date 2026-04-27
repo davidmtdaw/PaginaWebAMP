@@ -1,7 +1,7 @@
 # wordpress-content — Repositorio auxiliar
 
-Este repositorio contiene el **tema WordPress personalizado** de WebFusion Digital S.L.
-Es descargado automáticamente por el contenedor `git-sync` del proyecto principal.
+Este es un repositorio auxiliar de WebFusion Digital S.L.
+Es descargado automáticamente por el contenedor git-sync del proyecto principal.
 
 ## Estructura
 
@@ -19,19 +19,19 @@ wordpress-content/
 
 ## Cómo funciona
 
-El contenedor `git-sync` del `docker-compose.yml` principal clona este repositorio
-y copia la carpeta `wp-content/` dentro de `/var/www/html/` del contenedor WordPress.
+El contenedor git-sync del docker-compose.yml principal clona este repositorio
+y copia la carpeta wp-content/ dentro de /var/www/html/ del contenedor WordPress.
 
-Para activar el tema: **WordPress Admin → Apariencia → Temas → WebFusion Digital → Activar**
+Para activar el tema: Wordpress Admin -> Apariencia -> Temas -> WebFusion Digital -> Activar
 
 ## Actualizar el contenido
 
-1. Edita cualquier archivo PHP de este repositorio
-2. Haz `git push` al repositorio
-3. En el proyecto principal ejecuta:
+1. Edita un archivo PHP de este repositorio
+2. Haz git push al repositorio
+3. En el proyecto principal ejecutar:
 
 ```bash
 vagrant provision
 ```
 
-Los cambios se reflejan automáticamente en WordPress.
+Los cambios se actualizan automáticamente en el Wordpress.
